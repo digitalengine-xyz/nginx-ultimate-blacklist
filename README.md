@@ -1,15 +1,10 @@
-# nginx-ultimate-blacklist
-This was inspired by oohnoitz/nginx-blacklist and extends the list to use on nginx.
-
-oohnoitz/nginx-blacklist
-
 # Nginx Ultimate Blacklist
-**This was inspired by [oohnoitz/nginx-blacklist](https://github.com/oohnoitz/nginx-blacklist), it extends the list to include a ridicuilious amounts of evil bots. Always defend your nginx!!**
+**This was inspired by [oohnoitz/nginx-blacklist](https://github.com/oohnoitz/nginx-blacklist) and this awesome [PP article](https://perishablepress.com/4g-ultimate-user-agent-blacklist/), it extends the list to include a ridicuilious amounts of evil bots. Always defend your nginx!!**
 
 **blacklist.conf** utilizes the following two nginx modules to achieve the same results as the original **bad-bot-blocker**: `ngx_http_geo_module` and `ngx_http_map_module`. This provides admins with a single configuration file used for blacklisting any bots or malicious web crawlers without the need to complicate server blocks.
 
 ----
-
+## NGINX INSTALL
 ### Install
 1. Save `blacklist.conf` somewhere accessible by nginx.
 2. Include `blacklist.conf` in your `nginx.conf` before your server blocks.
@@ -40,3 +35,8 @@ Syntax:
   127.0.0.1                      1;
 ```
 Note: `0` = allow and `1` = deny.
+
+## APACHE INSTALL
+Just in case you are on the Apache platform, use the htAccess.txt file as the example for your implementation. Make sure to add the code to your .htAccess file.
+
+### Goodluck and happy safe coding!!
