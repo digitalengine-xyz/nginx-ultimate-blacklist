@@ -39,4 +39,4 @@ Note: `0` = allow and `1` = deny.
 ## APACHE INSTALL
 Just in case you are on the Apache platform, use the htAccess.txt file as the example for your implementation. Make sure to add the code to your .htAccess file.
 
-### Goodluck and happy safe coding!!
+### Good luck and happy safe coding!!
